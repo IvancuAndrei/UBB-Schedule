@@ -17,3 +17,7 @@ UBB-Schedule is a web application built for students of Babeș-Bolyai University
     🎨 Tailwind CSS
     🔗 Node.js (Backend)
     📚 University schedule data
+
+
+https://github.com/user-attachments/assets/ae02bc80-eab6-4ffe-8f68-3c064e65501f
+

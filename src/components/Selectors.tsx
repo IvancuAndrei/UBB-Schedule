@@ -46,14 +46,14 @@ const Selectors = ({ onSubmit }: SelectorsProps) => {
   return (
     <div className="flex flex-wrap space-x-6 p-5">
       <div className="flex flex-col">
-        <label htmlFor="spec" className="mb-2">
+        <label htmlFor="spec" className="mb-2 font-semibold">
           Specializare:
         </label>
         <select
           name="spec"
           id="spec"
           onChange={(e) => setSelectedSpec(e.target.value)}
-          className="p-2 border rounded-md"
+          className="p-2 border-2 border-blue-950 rounded-md"
         >
           <option value="I">Informatica Romana</option>
           <option value="IE">Informatica Engleza</option>
@@ -68,14 +68,14 @@ const Selectors = ({ onSubmit }: SelectorsProps) => {
       </div>
 
       <div className="flex flex-col">
-        <label htmlFor="year" className="mb-2">
+        <label htmlFor="year" className="mb-2 font-semibold">
           An:
         </label>
         <select
           name="year"
           id="year"
           onChange={(e) => setSelectedYear(e.target.value)}
-          className="p-2 border rounded-md"
+          className="p-2 border-2 border-blue-950 rounded-md"
         >
           <option value="1">I</option>
           <option value="2">II</option>
@@ -84,14 +84,14 @@ const Selectors = ({ onSubmit }: SelectorsProps) => {
       </div>
 
       <div className="flex flex-col">
-        <label htmlFor="group" className="mb-2">
+        <label htmlFor="group" className="mb-2 font-semibold">
           Grupa:
         </label>
         <select
           name="group"
           id="group"
           onChange={(e) => setSelectedGroup(e.target.value)}
-          className="p-2 border rounded-md"
+          className="p-2 border-2 border-blue-950 rounded-md"
         >
           {groups.map((group) => (
             <option key={group} value={group}>
@@ -102,14 +102,14 @@ const Selectors = ({ onSubmit }: SelectorsProps) => {
       </div>
 
       <div className="flex flex-col">
-        <label htmlFor="semigroup" className="mb-2">
+        <label htmlFor="semigroup" className="mb-2 font-semibold">
           Semigrupa:
         </label>
         <select
           name="semigroup"
           id="semigroup"
           onChange={(e) => setSelectedSemigroup(e.target.value)}
-          className="p-2 border rounded-md"
+          className="p-2 border-2 border-blue-950 rounded-md"
         >
           <option value="1">1</option>
           <option value="2">2</option>

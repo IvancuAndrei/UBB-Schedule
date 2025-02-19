@@ -22,17 +22,17 @@ const Course: React.FC<CourseProps> = ({ course }) => {
 
   return (
     <div className="flex min-h-[100px] text-xs">
-      <div className="bg-[#f4f4f4] w-[20%] m-[2px] flex items-center justify-center rounded-l-[5px]">
-        <div className="font-sans text-xs">
+      <div className="bg-sky-200 w-[20%] m-[2px] flex items-center justify-center rounded-l-[5px]">
+        <div className="font-sans text-lg">
           {details.map((detail, index) => (
             <p key={index}>{detail}</p>
           ))}
         </div>
       </div>
-      <div className="bg-[#f4f4f4] w-[75%] m-[2px] p-[10px_20px] rounded-r-[5px]">
-        <h4>{course.disciplina}</h4>
-        <p>Sala: {course.sala}</p>
-        <p>{course.prof}</p>
+      <div className="bg-gray-100 w-[75%] m-[2px] p-[10px_20px] rounded-r-[5px]">
+        <p className="font-bold text-lg">{course.disciplina}</p>
+        <p className="text-lg">Sala: {course.sala}</p>
+        <p className="text-lg">{course.prof}</p>
       </div>
     </div>
   );
